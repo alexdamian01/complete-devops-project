@@ -3,7 +3,7 @@ import time
 
 app = Flask(__name__)
 
-@app,route("/")
+@app.route("/")
 def get_current_time():
     current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     return f"The current Time: {current_time}"
